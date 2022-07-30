@@ -20,5 +20,5 @@ export default function Menu() {
 const linkStyle = {
     textDecoration: "none",
     color: 'blue',
-    cursor: 'pointer'
+    cursor: 'pointer',
   };

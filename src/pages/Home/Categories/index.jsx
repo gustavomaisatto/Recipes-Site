@@ -1,6 +1,6 @@
 import {Container} from './styles'
 import categoriesImage from '../../../assets/categoriesImage.svg'
-export default function Categories({categories}) {
+export default function Categories({categories, setCategory}) {
     return (
         <Container>
             <div id="header">
@@ -11,9 +11,9 @@ export default function Categories({categories}) {
            {
             categories.map((data)=> {
                 return (
-                <div className='category'>
+                <div key={data.idCategory} className='category' onClick={() => setCategory(data.strCategory)}>
                     <img src={data.strCategoryThumb} alt='category'></img>
-                <p key={data.idCategory}>{data.strCategory}</p>
+                <p>{data.strCategory}</p>
                 </div>
                 )
             })
