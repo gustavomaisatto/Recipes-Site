@@ -47,7 +47,11 @@ export default function Recipes({recipeSelect}) {
             return <div>{data} </div>
         })}
         </div>
+        <div id="description">
+            <h1>Instructions</h1>
         <p>{recipe.strInstructions}</p>
+        </div>
+        
         </Container>
     )
 }

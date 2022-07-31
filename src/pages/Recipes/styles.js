@@ -21,8 +21,14 @@ export const Container = styled.div`
     height: 600px;
     border-radius: 50px;
   }
+  #description {
+    
+    width: 95%;
+   padding: 10px 30px 30px 30px ;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+  }
   p {
-    padding-right: 50px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
