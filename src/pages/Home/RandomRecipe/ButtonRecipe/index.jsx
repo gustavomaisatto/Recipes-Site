@@ -1,7 +1,17 @@
 import {ButtonView} from './styles'
 import playButton from '../../../../assets/playButton.svg'
-export default function ButtonRecipe() {
+import {Link} from 'react-router-dom'
+export default function ButtonRecipe({categorySelect, setRecipeSelect}) {
     return (
-        <ButtonView><img src={playButton} alt='play'></img>View Recipe</ButtonView>
+        <Link to={'/Recipes'} style={linkStyle}>
+        <ButtonView onClick={() => setRecipeSelect(categorySelect)}><img src={playButton} alt='play'></img>View Recipe</ButtonView>
+        </Link>
     )
 }
+
+const linkStyle = {
+    textDecoration: "none",
+    color: 'blue',
+    cursor: 'pointer'
+    
+  };

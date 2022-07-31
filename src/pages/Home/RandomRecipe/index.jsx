@@ -8,7 +8,7 @@ import RandomTitle from "./RandomTitle";
 import userImage from '../../../assets/userImage.svg'
 import { ContainerRandom, ColumnLeft, MainContent } from "./styles";
 
-export function RandomRecipe({ imageRandom, title }) {
+export function RandomRecipe({ imageRandom, title, categorySelect, setRecipeSelect }) {
   return (
     <ContainerRandom>
       <ColumnLeft>
@@ -33,7 +33,7 @@ export function RandomRecipe({ imageRandom, title }) {
             <p id='date'>15 March 2022</p>
           </div>
           </div>
-          <ButtonRecipe></ButtonRecipe>
+          <ButtonRecipe setRecipeSelect={setRecipeSelect} categorySelect={categorySelect}></ButtonRecipe>
           </div>
         </div>
         <div
