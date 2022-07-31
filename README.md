@@ -1,4 +1,4 @@
-#site de receitas, consumindo o Free Meal API
+# site de receitas, consumindo o Free Meal API
 
 # Getting Started with Create React App
 
