@@ -8,7 +8,7 @@ import {useState} from 'react'
 export default function RouterReact() {
     const [recipeSelect, setRecipeSelect] = useState('52813');
     return(
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
     <Header></Header>
     <LineDivisor></LineDivisor>
     <Routes>
