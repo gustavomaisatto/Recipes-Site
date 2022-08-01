@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/Recipes-Sites/static/js/main.c41d206b.js",
-    "static/media/rightRandom.svg": "/Recipes-Sites/static/media/rightRandom.3fbf8c0ba0df04aec3929e61883cdbae.svg",
-    "static/media/userImage.svg": "/Recipes-Sites/static/media/userImage.bfcbb554d3d0bb351d4c47f9749d4594.svg",
-    "static/media/hotButton.svg": "/Recipes-Sites/static/media/hotButton.bb2b6fba41f387400db165c480eeba38.svg",
-    "static/media/ForkKnife.svg": "/Recipes-Sites/static/media/ForkKnife.424b69f61d38fb37e868c1065de16ed5.svg",
-    "static/media/playButton.svg": "/Recipes-Sites/static/media/playButton.f212c926ae72a4de1fb895f72e6b44b6.svg",
-    "static/media/twitterLogo.svg": "/Recipes-Sites/static/media/twitterLogo.f0580ff73d568ec601bb9d1f221be2bf.svg",
-    "static/media/instagramLogo.svg": "/Recipes-Sites/static/media/instagramLogo.3e12028d7d69ba0d281b7c1c60956c17.svg",
-    "index.html": "/Recipes-Sites/index.html",
-    "static/media/categoriesImage.svg": "/Recipes-Sites/static/media/categoriesImage.c6e9c3a217bda9836f9c825690307945.svg",
-    "static/media/facebookLogo.svg": "/Recipes-Sites/static/media/facebookLogo.23f5833c6434fffab8060cc43ac6a36b.svg",
-    "static/media/leftRandom.svg": "/Recipes-Sites/static/media/leftRandom.8a66b11f3858f42d72a7b11392fc0ebb.svg",
-    "static/media/columnleft.svg": "/Recipes-Sites/static/media/columnleft.330ba98a82ea6ea99cd8871552f35f4b.svg",
-    "static/media/columnRight.svg": "/Recipes-Sites/static/media/columnRight.ac80b5bbe032e5ba46c0a264227f6a2b.svg",
-    "main.c41d206b.js.map": "/Recipes-Sites/static/js/main.c41d206b.js.map"
+    "main.js": "/Recipes-Site/static/js/main.b01ec468.js",
+    "static/media/rightRandom.svg": "/Recipes-Site/static/media/rightRandom.3fbf8c0ba0df04aec3929e61883cdbae.svg",
+    "static/media/userImage.svg": "/Recipes-Site/static/media/userImage.bfcbb554d3d0bb351d4c47f9749d4594.svg",
+    "static/media/hotButton.svg": "/Recipes-Site/static/media/hotButton.bb2b6fba41f387400db165c480eeba38.svg",
+    "static/media/ForkKnife.svg": "/Recipes-Site/static/media/ForkKnife.424b69f61d38fb37e868c1065de16ed5.svg",
+    "static/media/playButton.svg": "/Recipes-Site/static/media/playButton.f212c926ae72a4de1fb895f72e6b44b6.svg",
+    "static/media/twitterLogo.svg": "/Recipes-Site/static/media/twitterLogo.f0580ff73d568ec601bb9d1f221be2bf.svg",
+    "static/media/instagramLogo.svg": "/Recipes-Site/static/media/instagramLogo.3e12028d7d69ba0d281b7c1c60956c17.svg",
+    "index.html": "/Recipes-Site/index.html",
+    "static/media/categoriesImage.svg": "/Recipes-Site/static/media/categoriesImage.c6e9c3a217bda9836f9c825690307945.svg",
+    "static/media/facebookLogo.svg": "/Recipes-Site/static/media/facebookLogo.23f5833c6434fffab8060cc43ac6a36b.svg",
+    "static/media/leftRandom.svg": "/Recipes-Site/static/media/leftRandom.8a66b11f3858f42d72a7b11392fc0ebb.svg",
+    "static/media/columnleft.svg": "/Recipes-Site/static/media/columnleft.330ba98a82ea6ea99cd8871552f35f4b.svg",
+    "static/media/columnRight.svg": "/Recipes-Site/static/media/columnRight.ac80b5bbe032e5ba46c0a264227f6a2b.svg",
+    "main.b01ec468.js.map": "/Recipes-Site/static/js/main.b01ec468.js.map"
   },
   "entrypoints": [
-    "static/js/main.c41d206b.js"
+    "static/js/main.b01ec468.js"
   ]
 }
