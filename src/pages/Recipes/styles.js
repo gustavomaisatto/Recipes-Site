@@ -38,6 +38,13 @@ export const Container = styled.div`
 
     color: rgba(0, 0, 0, 1);
   }
+  #recipeLink{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
   #class {
     padding-left: 10px;
     display: flex;
@@ -81,15 +88,22 @@ export const Container = styled.div`
     padding-right: 300px;
   }
   #ingredients {
+    gap: 10px;
     display: grid;
-    grid-template-columns:repeat(1, 150px);
+    grid-template-columns:repeat(4, 150px);
+    margin-right: 200px;
   }
   #title-title{
     width: 40%;
   }
   .ingredientData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 150px;
     height: 150px;
+    border-radius: 50px;
     background: linear-gradient(
       180deg,
       rgba(204, 38, 27, 0) 0%,

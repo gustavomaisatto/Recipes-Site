@@ -6,46 +6,42 @@ import ForkKnife from '../../assets/ForkKnife.svg'
 export default function Recipes({recipeSelect}) {
     const [recipe, setRecipe] = useState('');
     const [ingredients, setIngredients] = useState('');
-    function filterIngredients() {
-        
-            if(ingredients !== '') {
-                let ingrediente  = ingredients.filter(item => item[0])
-                    ingrediente.map((data) => {
-                        return data
-                    })
-                    console.log(ingrediente)
+    async function filterIngredients() {
+        await api.get(`/lookup.php?i=${recipeSelect}`).then((response) => {
+            const data = response.data.meals[0]
+          setIngredients(Object.keys(data).map(item => {
+            if(item.includes('Ingredient')) {
+                return data[item]
             }
             
+          }).filter(dataFilter => {
+            return dataFilter
+          })) 
+          
+            
+        })
       
     }
+    async function getRecipe() {
+        await api.get(`/lookup.php?i=${recipeSelect}`).then((response) => {
+            setRecipe(response.data.meals[0])
+        })
+          
+     }
     useEffect(() => {
-        async function getRecipe(recipeSelect) {
-            await api.get(`/lookup.php?i=${recipeSelect}`).then((response) => {
-                setRecipe(response.data.meals[0])
-               setIngredients(Object.keys(response.data.meals[0]).map((item) => {
-                let ingredients = []
-                if(item.includes('Ingredient')) {
-                        ingredients.push(response.data.meals[0][item])
-                    
-                }
-                return ingredients
-            }))
-                
-            })
-              
-         }
-        getRecipe(recipeSelect);
-
-        filterIngredients();
+        
+        getRecipe()
+        filterIngredients()
 
          
     }, [])
-    filterIngredients()
         return(
             <Container>
                 <div id="title">
             <div id={'title-title'}>
             <h1>{recipe.strMeal}</h1>
+            <a  href={recipe.strSource} target={'_blank'} rel="noreferrer"><p id="recipeLink">Recipe Link</p></a>
+            <a  href={recipe.strYoutube} target={'_blank'} rel="noreferrer"><p id="recipeLink">Youtube Link</p></a>
             </div>
             <h1>Ingredients</h1>
             </div>
@@ -59,7 +55,13 @@ export default function Recipes({recipeSelect}) {
             <div id="main">
             <img src={recipe.strMealThumb} alt="Meal Thumb" />
             <div id="ingredients">
-            { }
+            {ingredients !== '' && ingredients.map((data) => {
+                    return( 
+                    <div className="ingredientData">{data}</div>
+                    )
+                    
+                
+            })}
             </div>
             </div>
             <div id="description">

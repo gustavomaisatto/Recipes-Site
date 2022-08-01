@@ -49,6 +49,7 @@ export const Container = styled.div`
     grid-gap: 40px;
   }
   img{
+    border-radius: 50%;
     position: absolute;
     margin-top: -30px;
     margin-left: -50px;
