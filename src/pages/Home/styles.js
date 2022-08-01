@@ -32,6 +32,8 @@ export const Container = styled.div`
     align-items: flex-start;
   }
   .filterCategory {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 180px;
     padding: 5px;
@@ -46,7 +48,7 @@ export const Container = styled.div`
     img{
     position: absolute;
     margin-top: -30px;
-    margin-left: -40px;
+    margin-left: 35px;
     width: 100px;
     height: 100px;
     object-fit: cover;

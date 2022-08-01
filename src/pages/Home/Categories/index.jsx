@@ -5,7 +5,6 @@ export default function Categories({categories, setCategory}) {
         <Container>
             <div id="header">
             <h1>Categories</h1>
-            <button>View All Categories</button>
             </div>
             <div id='container-categories'>
            {

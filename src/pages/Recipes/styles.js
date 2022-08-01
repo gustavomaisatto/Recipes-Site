@@ -73,9 +73,33 @@ export const Container = styled.div`
   }
   #main{
     display: flex;
+    justify-content: space-between;
   }
   #title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 300px;
+  }
+  #ingredients {
+    display: grid;
+    grid-template-columns:repeat(1, 150px);
+  }
+  #title-title{
+    width: 40%;
+  }
+  .ingredientData {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(
+      180deg,
+      rgba(204, 38, 27, 0) 0%,
+      rgba(204, 38, 27, 0.1) 100%
+    );
+    margin-left: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
   }
 `;

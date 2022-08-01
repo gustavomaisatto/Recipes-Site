@@ -9,9 +9,9 @@ export default function Menu() {
         <Link to={'/Recipes'} style={linkStyle}>
         <MenuItem>Recipes</MenuItem>
         </Link>
-        <MenuItem>Blog</MenuItem>
-        <MenuItem>Contact</MenuItem>
-        <MenuItem>About Us</MenuItem>
+        <a href='https://gustavomaisatto.github.io/Recipes-Site/'><MenuItem>Blog</MenuItem></a>
+        <a href='https://gustavomaisatto.github.io/Recipes-Site/'><MenuItem>Contact</MenuItem></a>
+        <a href='https://gustavomaisatto.github.io/Recipes-Site/'><MenuItem>About Us</MenuItem></a>
       </Container>  
     )
 }

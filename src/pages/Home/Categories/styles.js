@@ -69,6 +69,7 @@ export const Container = styled.div`
     border-radius: 30px;
   }
   p {
+    justify-content: center;
     margin-top: 80px;
     font-family: "Inter";
     font-style: normal;
