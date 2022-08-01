@@ -40,8 +40,8 @@ export default function Recipes({recipeSelect}) {
                 <div id="title">
             <div id={'title-title'}>
             <h1>{recipe.strMeal}</h1>
-            <a  href={recipe.strSource} target={'_blank'} rel="noreferrer"><p id="recipeLink">Recipe Link</p></a>
-            <a  href={recipe.strYoutube} target={'_blank'} rel="noreferrer"><p id="recipeLink">Youtube Link</p></a>
+            <a  href={recipe.strSource} target={'_blank'} rel="noreferrer"><p className="recipeLink">Recipe Link</p></a>
+            <a  href={recipe.strYoutube} target={'_blank'} rel="noreferrer"><p className="recipeLink">Youtube Link</p></a>
             </div>
             <h1>Ingredients</h1>
             </div>

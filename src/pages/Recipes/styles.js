@@ -38,7 +38,7 @@ export const Container = styled.div`
 
     color: rgba(0, 0, 0, 1);
   }
-  #recipeLink{
+  .recipeLink{
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
