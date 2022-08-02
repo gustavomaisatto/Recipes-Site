@@ -116,4 +116,47 @@ export const Container = styled.div`
     font-size: 18px;
     line-height: 17px;
   }
+  @media(max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+      #main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      img {
+        width: 100vw;
+
+      }
+      #ingredients-title{
+        opacity: 0;
+        position: absolute;
+      }
+      #title {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+  #title-title {
+    width: 100%;
+  }
+  #ingredients {
+      margin-right: 0;
+      grid-template-columns:repeat(3, 150px);
+  }
+    }
+    @media(max-width: 500px) {
+      h1{
+        font-size: 45px;
+      }
+      #ingredients {
+      gap: 10px;
+      display: grid;
+      grid-template-columns:repeat(2, 150px);
+      margin-right: 0;
+  }
+  }
 `;

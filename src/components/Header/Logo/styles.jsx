@@ -14,5 +14,11 @@ export const LogoFood = styled.div`
     span{
      color:#FF7426
     }
+    @media(max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media(max-width: 500px) {
+    font-size: 12px;
+  }
 
 `
